@@ -196,7 +196,7 @@
     <br />
     <hr />
     <br />
-    <div class="bg-yellow-100 p-10 w-[100vw]">
+    <div class="bg-yellow-100 p-10 w-full">
       <h1>Percentage</h1>
       <div class="bg-red-100 w-1/1 p-2 mb-2">(1/1)%</div>
       <div class="bg-red-200 w-1/2 p-2 mb-2">(1/2)%</div>
@@ -210,7 +210,7 @@
     <br />
     <hr />
     <br />
-    <div class="bg-green-100 p-10 h-[100vh] flex">
+    <div class="flex-wrap bg-green-100 p-10 h-[100vh] flex">
       <h1>Percentage</h1>
       <div class="bg-red-100 h-1/1 p-2 mb-2">(1/1)%</div>
       <div class="bg-red-200 h-1/2 p-2 mb-2">(1/2)%</div>
@@ -244,5 +244,113 @@
         background-image: url('https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?cs=srgb&dl=pexels-craigmdennis-205421.jpg&fm=jpg');
       "
     ></div>
+    <br />
+    <hr />
+    <br />
+
+    <div>
+      <div class="p-30 flex flex-wrap h-auto w-100 bg-blue-500">
+        <div class="h-10 mb-6 p-2 w-90 text-center shadow-md">
+          Shadow Medium
+        </div>
+        <div class="h-10 mb-6 p-2 w-90 text-center shadow-lg">Shadow Large</div>
+        <div class="h-10 mb-6 p-2 w-90 text-center shadow-xl">
+          Shadow Xlarge
+        </div>
+        <div class="h-10 mb-8 p-2 w-90 text-center shadow-2xl">
+          Shadow 2XLarge
+        </div>
+        <div class="h-10 mb-8 p-2 w-90 text-center shadow-inner">
+          Shadow Inner
+        </div>
+        <div class="h-10 mb-6 p-2 w-90 text-center shadow-2xl shadow-red-100">
+          Shadow colour
+        </div>
+        <div class="h-10 mb-6 p-2 w-90 text-center shadow-2xl shadow-red-100">
+          Shadow colour
+        </div>
+        <div
+          class="h-10 mb-6 p-2 w-90 text-center shadow-2xl shadow-red-100/10"
+        >
+          Shadow opacity
+        </div>
+        <div class="h-10 p-2 w-90 text-center shadow-2xl shadow-red-100/100">
+          Shadow opacity
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div
+      class="h-10 w-full bg-gradient-to-r from-red-500 via-green-500 to-blue-500 font-bold text-center p-2"
+    >
+      Gradient
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="p-10 h-auto w-1/2 bg-yellow-500 padding-2 m-5">
+      <div
+        class="border-4 border-blue-600 h-10 w-auto bg-red-600 text-white text-center"
+      >
+        Blue Border All Around
+      </div>
+    </div>
+    <br />
+    <div class="p-10 h-auto w-1/2 bg-yellow-500 padding-2 m-5">
+      <div
+        class="border-t-4 border-blue-600 h-10 w-auto bg-red-600 text-white text-center"
+      >
+        Blue Border On Top
+      </div>
+    </div>
+    <br />
+    <div class="p-10 h-auto w-1/2 bg-yellow-500 padding-2 m-5">
+      <div
+        class="border-y-2 border-green-600 h-10 w-auto bg-red-600 text-white text-center p-1"
+      >
+        Green Border On Top & Bottom
+      </div>
+    </div>
+    <div class="bg-yellow-100 p-5 w-fill">
+      <div class="rounded-b-3xl h-15 p-5 m-4 bg-blue-100"></div>
+    </div>
+    <div class="bg-yellow-200 p-5 w-fill">
+      <div class="rounded-t-3xl h-15 p-5 m-4 bg-blue-200"></div>
+    </div>
+    <div class="bg-yellow-300 p-5 w-fill">
+      <div class="rounded-tl-3xl h-15 p-5 m-4 bg-blue-300"></div>
+    </div>
+    <div class="bg-yellow-400 p-5 w-fill">
+      <div class="rounded-tr-4xl h-15 p-5 m-4 bg-blue-400"></div>
+    </div>
+    <div class="bg-yellow-500 p-5 w-fill">
+      <div class="rounded-bl-4xl h-15 p-5 m-4 bg-blue-500"></div>
+    </div>
+    <div class="bg-yellow-600 p-5 w-fill">
+      <div class="rounded-full h-15 p-5 m-4 bg-blue-600"></div>
+    </div>
+
+    <div
+      class="bg-indigo-800 sm:bg-red-800 md:bg-green-400 lg:bg-orange-500 xl:bg-purple-600 2xl:bg-pink-800 h-[60vh] w-full text-white text-center p-10"
+    >
+      Default back-groung colour: indigo-800 <br />
+      back-ground colour: red-800 if screen-size: Small <br />
+      back-ground colour: green-400 if screen-size: Medium <br />
+      back-ground colour: orange-500 if screen-size: Large <br />
+      back-ground colour: purple-600 if screen-size: XLarge <br />
+      :back-ground colour: purple-600 if screen-size: 2XLarge <br />
+      h-screen w-full
+    </div>
+    <div class="grid grid-cols-4 bg-yellow-100 p-10 gap-5 text-center ">
+      <div class="bg-green-300 h-50">Grid cell 1</div>
+      <div class="bg-green-300 col-span-2 h-auto">Grid cell 2</div>
+      <div class="row-span-2 bg-green-300 h-auto">Grid cell 3</div>
+      <div class="bg-green-300 h-50">Grid cell 4</div>
+      <div class="bg-green-300 h-50">Grid cell 5</div>
+      <div class="bg-green-300 h-50">Grid cell 6</div>
+      <div class="bg-green-300 col-span-4 h-20">Grid cell 7</div>
+    </div>
   </body>
 </html>
